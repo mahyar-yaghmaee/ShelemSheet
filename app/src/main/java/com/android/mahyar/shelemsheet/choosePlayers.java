@@ -7,12 +7,16 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
+import android.view.ViewGroup;
+
 
 
 public class choosePlayers extends ActionBarActivity {
 
     private Button mResetButton;
     private Button mSubmitButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +33,8 @@ public class choosePlayers extends ActionBarActivity {
                 EditText player4text = (EditText)findViewById(R.id.editText_player4);
                 EditText handpoint = (EditText)findViewById(R.id.editText_handPoint);
                 EditText maxPoints = (EditText)findViewById(R.id.editText_totalPoint);
-                new choosePlayerReset(player1text, player2text, player3text, player4text, handpoint, maxPoints);
+                choosePlayerModel model = new choosePlayerModel();
+                model.Reset(player1text, player2text, player3text, player4text, handpoint, maxPoints);
             }
         });
 
@@ -37,6 +42,20 @@ public class choosePlayers extends ActionBarActivity {
         mSubmitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                EditText handpoint = (EditText)findViewById(R.id.editText_handPoint);
+                EditText maxPoints = (EditText)findViewById(R.id.editText_totalPoint);
+                int handPoint_int = Integer.parseInt(handpoint.getText().toString());
+                int totalPoint_int = Integer.parseInt(maxPoints.getText().toString());
+                //Hand point should not be greater than total points
+                if (handPoint_int > totalPoint_int){
+                    Toast.makeText(choosePlayers.this,R.string.handpointRangeToast, Toast.LENGTH_SHORT).show();
+                }
+
+                //No empty fields
+                choosePlayerModel model = new choosePlayerModel();
+                ViewGroup group = (ViewGroup)findViewById(R.id.choosePlayerParent);
+                if (model.isInputEmpty(group))
+                    Toast.makeText(choosePlayers.this,R.string.emptyTextToast, Toast.LENGTH_SHORT).show();
 
             }
         });

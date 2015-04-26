@@ -22,6 +22,8 @@
 
     <string name="reset_button">Reset</string>
     <string name="submit_button">Submit</string>
+    <string name="handpointRangeToast">ERROR: Total points less than hand points!</string>
+    <string name="emptyTextToast">Please fill all fields</string>
 
 
 
