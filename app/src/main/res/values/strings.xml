@@ -1,6 +1,30 @@
 <resources>
     <string name="app_name">ShelemSheet</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="team_a">Team A</string>
+    <string name="player1">Player1: </string>
+    <string name="player1_name"></string>
+    <string name="player2">Player2: </string>
+    <string name="player2_name"></string>
+
+    <string name="team_b">Team B</string>
+    <string name="player3">Player1: </string>
+    <string name="player3_name"></string>
+    <string name="player4">Player2: </string>
+    <string name="player4_name"></string>
+
+
+    <string name="hand_point_string">Max point in a hand: </string>
+    <string name="hand_points">165</string>
+
+    <string name="max_points_string">Max total points: </string>
+    <string name="max_points">1165</string>
+
+    <string name="reset_button">Reset</string>
+    <string name="submit_button">Submit</string>
+
+
+
+
     <string name="action_settings">Settings</string>
 </resources>
