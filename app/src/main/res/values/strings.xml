@@ -14,7 +14,7 @@
     <string name="player4_name"></string>
 
 
-    <string name="hand_point_string">Max point in a hand: </string>
+    <string name="hand_point_string">Max points in a hand: </string>
     <string name="hand_points">165</string>
 
     <string name="max_points_string">Max total points: </string>

@@ -4,7 +4,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".choosePlayers"
-    android:background="@color/dark_blue">
+    android:background="@color/grey">
 
 
 
@@ -16,8 +16,8 @@
         android:textSize="25sp"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/editText3"
-        android:layout_toStartOf="@+id/editText3" />
+        android:layout_toLeftOf="@+id/editText_player3"
+        android:layout_toStartOf="@+id/editText_player3" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -35,9 +35,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
+        android:textColor="@color/white"
         android:text="@string/player1_name"
         android:ems="10"
-        android:id="@+id/editText"
+        android:id="@+id/editText_player1"
         android:layout_alignBottom="@+id/textView2"
         android:layout_toRightOf="@+id/textView"
         android:layout_toEndOf="@+id/textView" />
@@ -49,7 +50,7 @@
         android:textColor="@color/white"
         android:textSize="25sp"
         android:id="@+id/textView3"
-        android:layout_below="@+id/editText"
+        android:layout_below="@+id/editText_player1"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -58,11 +59,12 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:text="@string/player2_name"
+        android:textColor="@color/white"
         android:ems="10"
-        android:id="@+id/editText2"
+        android:id="@+id/editText_player2"
         android:layout_alignBottom="@+id/textView3"
-        android:layout_alignLeft="@+id/editText"
-        android:layout_alignStart="@+id/editText" />
+        android:layout_alignLeft="@+id/editText_player1"
+        android:layout_alignStart="@+id/editText_player1" />
 
     <TextView
         android:text="@string/team_b"
@@ -93,8 +95,9 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:text="@string/player3_name"
+        android:textColor="@color/white"
         android:ems="10"
-        android:id="@+id/editText3"
+        android:id="@+id/editText_player3"
         android:layout_alignBottom="@+id/textView5"
         android:layout_toRightOf="@+id/textView5"
         android:layout_toEndOf="@+id/textView5" />
@@ -115,11 +118,12 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:text="@string/player4_name"
+        android:textColor="@color/white"
         android:ems="10"
-        android:id="@+id/editText4"
+        android:id="@+id/editText_player4"
         android:layout_alignBottom="@+id/textView6"
-        android:layout_alignLeft="@+id/editText3"
-        android:layout_alignStart="@+id/editText3" />
+        android:layout_alignLeft="@+id/editText_player3"
+        android:layout_alignStart="@+id/editText_player3" />
 
     <TextView
         android:text="@string/hand_point_string"
@@ -139,7 +143,7 @@
         android:layout_height="wrap_content"
         android:inputType="numberSigned"
         android:ems="10"
-        android:id="@+id/editText5"
+        android:id="@+id/editText_handPoint"
         android:layout_alignBottom="@+id/textView7"
         android:layout_toRightOf="@+id/textView7"
         android:textColor="@color/white"
@@ -164,7 +168,7 @@
         android:textColor="@color/white"
         android:inputType="numberDecimal"
         android:ems="10"
-        android:id="@+id/editText6"
+        android:id="@+id/editText_totalPoint"
         android:layout_alignBottom="@+id/textView8"
         android:layout_toRightOf="@+id/textView8"
         android:layout_toEndOf="@+id/textView8" />
@@ -173,7 +177,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/reset_button"
-        android:id="@+id/button"
+        android:id="@+id/reset_button"
         android:layout_marginTop="42dp"
         android:layout_below="@+id/textView8"
         android:layout_toRightOf="@+id/textView4"
@@ -183,8 +187,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/submit_button"
-        android:id="@+id/button2"
-        android:layout_alignTop="@+id/button"
+        android:id="@+id/submit_button"
+        android:layout_alignTop="@+id/reset_button"
         android:layout_toRightOf="@+id/textView8"
         android:layout_toEndOf="@+id/textView8" />
 
