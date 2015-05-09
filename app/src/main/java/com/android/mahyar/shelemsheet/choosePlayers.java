@@ -1,5 +1,6 @@
 package com.android.mahyar.shelemsheet;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -42,6 +43,8 @@ public class choosePlayers extends ActionBarActivity {
         mSubmitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                choosePlayerModel model = new choosePlayerModel();
+                ViewGroup group = (ViewGroup)findViewById(R.id.choosePlayerParent);
                 EditText handpoint = (EditText)findViewById(R.id.editText_handPoint);
                 EditText maxPoints = (EditText)findViewById(R.id.editText_totalPoint);
                 int handPoint_int = Integer.parseInt(handpoint.getText().toString());
@@ -50,12 +53,14 @@ public class choosePlayers extends ActionBarActivity {
                 if (handPoint_int > totalPoint_int){
                     Toast.makeText(choosePlayers.this,R.string.handpointRangeToast, Toast.LENGTH_SHORT).show();
                 }
-
                 //No empty fields
-                choosePlayerModel model = new choosePlayerModel();
-                ViewGroup group = (ViewGroup)findViewById(R.id.choosePlayerParent);
-                if (model.isInputEmpty(group))
+                else if (model.isInputEmpty(group))
                     Toast.makeText(choosePlayers.this,R.string.emptyTextToast, Toast.LENGTH_SHORT).show();
+                // Next page otherwise
+                else {
+                    Intent choose_to_main = new Intent(choosePlayers.this, mainPage.class);
+                    startActivity(choose_to_main);
+                }
 
             }
         });
