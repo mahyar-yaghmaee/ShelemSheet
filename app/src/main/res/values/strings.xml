@@ -25,6 +25,9 @@
     <string name="handpointRangeToast">ERROR: Total points less than hand points!</string>
     <string name="emptyTextToast">Please fill all fields</string>
 
+    <string name="points">Points</string>
+    <string name="submit_point">Submit</string>
+
 
 
 
