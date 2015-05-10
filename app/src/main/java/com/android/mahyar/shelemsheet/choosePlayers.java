@@ -35,6 +35,7 @@ public class choosePlayers extends ActionBarActivity {
                 EditText handpoint = (EditText)findViewById(R.id.editText_handPoint);
                 EditText maxPoints = (EditText)findViewById(R.id.editText_totalPoint);
                 choosePlayerModel model = new choosePlayerModel();
+                // TODO: Reset Group View instead of one by one
                 model.Reset(player1text, player2text, player3text, player4text, handpoint, maxPoints);
             }
         });
@@ -58,7 +59,22 @@ public class choosePlayers extends ActionBarActivity {
                     Toast.makeText(choosePlayers.this,R.string.emptyTextToast, Toast.LENGTH_SHORT).show();
                 // Next page otherwise
                 else {
+                    //TODO: send points (hand/total) as well
+                    //send Player Names as intent
+                    EditText player1text = (EditText)findViewById(R.id.editText_player1);
+                    EditText player2text = (EditText)findViewById(R.id.editText_player2);
+                    EditText player3text = (EditText)findViewById(R.id.editText_player3);
+                    EditText player4text = (EditText)findViewById(R.id.editText_player4);
+                    String player1String = player1text.getText().toString();
+                    String player2String = player2text.getText().toString();
+                    String player3String = player3text.getText().toString();
+                    String player4String = player4text.getText().toString();
                     Intent choose_to_main = new Intent(choosePlayers.this, mainPage.class);
+                    choose_to_main.putExtra("Player1", player1String);
+                    choose_to_main.putExtra("Player2", player2String);
+                    choose_to_main.putExtra("Player3", player3String);
+                    choose_to_main.putExtra("Player4", player4String);
+
                     startActivity(choose_to_main);
                 }
 

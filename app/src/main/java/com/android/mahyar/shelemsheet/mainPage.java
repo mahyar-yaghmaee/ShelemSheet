@@ -1,6 +1,7 @@
 package com.android.mahyar.shelemsheet;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,6 +24,18 @@ public class mainPage extends Activity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_scores);
+        //import from other Activity
+        Intent intent = getIntent();
+        String player1_name = intent.getStringExtra("Player1");
+        String player2_name = intent.getStringExtra("Player2");
+        String player3_name = intent.getStringExtra("Player3");
+        String player4_name = intent.getStringExtra("Player4");
+        //set names in new activity
+        TextView TeamANames = (TextView) findViewById(R.id.teamA_names);
+        TeamANames.setText(player1_name+"/"+player2_name);
+        TextView TeamBNames = (TextView) findViewById(R.id.teamB_names);
+        TeamBNames.setText(player3_name+"/"+player4_name);
+
 
 
         mSubmitScoreButton = (Button)findViewById(R.id.submit_scores_button);
