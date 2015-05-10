@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/points"
-        android:id="@+id/textView9"
+        android:id="@+id/textViewTeamAFinalPoint"
         android:layout_below="@+id/teamA_names"
         android:layout_alignLeft="@+id/teamA_names"
         android:layout_alignStart="@+id/teamA_names" />
@@ -48,8 +48,8 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/points"
-        android:id="@+id/textView10"
-        android:layout_alignTop="@+id/textView9"
+        android:id="@+id/textViewTeamBFinalPoint"
+        android:layout_alignTop="@+id/textViewTeamAFinalPoint"
         android:layout_alignRight="@+id/teamB_names"
         android:layout_alignEnd="@+id/teamB_names" />
 
@@ -58,32 +58,32 @@
         android:layout_height="wrap_content"
         android:text="@string/submit_point"
         android:id="@+id/submit_scores_button"
-        android:layout_below="@+id/textView10"
+        android:layout_below="@+id/textViewTeamBFinalPoint"
         android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
+        android:inputType="numberSigned"
         android:ems="10"
-        android:id="@+id/editText"
+        android:id="@+id/editTextTeamA"
         android:layout_alignBottom="@+id/submit_scores_button"
-        android:layout_alignLeft="@+id/textView9"
-        android:layout_alignStart="@+id/textView9"
-        android:layout_alignRight="@+id/textView9"
-        android:layout_alignEnd="@+id/textView9" />
+        android:layout_alignLeft="@+id/textViewTeamAFinalPoint"
+        android:layout_alignStart="@+id/textViewTeamAFinalPoint"
+        android:layout_alignRight="@+id/textViewTeamAFinalPoint"
+        android:layout_alignEnd="@+id/textViewTeamAFinalPoint" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="number"
+        android:inputType="numberSigned"
         android:ems="10"
-        android:id="@+id/editText2"
+        android:id="@+id/editTextTeamB"
         android:layout_alignBottom="@+id/submit_scores_button"
-        android:layout_alignRight="@+id/textView10"
-        android:layout_alignEnd="@+id/textView10"
-        android:layout_alignLeft="@+id/textView10"
-        android:layout_alignStart="@+id/textView10" />
+        android:layout_alignRight="@+id/textViewTeamBFinalPoint"
+        android:layout_alignEnd="@+id/textViewTeamBFinalPoint"
+        android:layout_alignLeft="@+id/textViewTeamBFinalPoint"
+        android:layout_alignStart="@+id/textViewTeamBFinalPoint" />
 
 
     <ScrollView
