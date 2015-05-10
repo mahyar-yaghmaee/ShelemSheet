@@ -35,6 +35,10 @@ public class mainPage extends Activity{
         TeamANames.setText(player1_name+"/"+player2_name);
         TextView TeamBNames = (TextView) findViewById(R.id.teamB_names);
         TeamBNames.setText(player3_name+"/"+player4_name);
+        //import points
+        String handPoint = intent.getStringExtra("HandPoint");
+        String totalPoints = intent.getStringExtra("TotalPoints");
+
 
 
 
@@ -45,10 +49,10 @@ public class mainPage extends Activity{
                 TextView[] leftCol = new TextView[MAX_ROW_NUM];
                 TextView[] rightCol = new TextView[MAX_ROW_NUM];
 
-                choosePlayerModel model_choose_player = new choosePlayerModel();
+                mainPageModel model = new mainPageModel();
                 ViewGroup group = (ViewGroup)findViewById(R.id.mainPage);
                 //No empty fields
-                if (model_choose_player.isInputEmpty(group))
+                if (model.isInputEmpty(group))
                     Toast.makeText(mainPage.this, R.string.emptyTextToast, Toast.LENGTH_SHORT).show();
                 else {
                     TextView finalA = (TextView) findViewById(R.id.textViewTeamAFinalPoint);

@@ -45,38 +45,49 @@ public class choosePlayers extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 choosePlayerModel model = new choosePlayerModel();
-                ViewGroup group = (ViewGroup)findViewById(R.id.choosePlayerParent);
+                ViewGroup group = (ViewGroup)findViewById(R.id.scrollable_layout_choose_player);
                 EditText handpoint = (EditText)findViewById(R.id.editText_handPoint);
                 EditText maxPoints = (EditText)findViewById(R.id.editText_totalPoint);
-                int handPoint_int = Integer.parseInt(handpoint.getText().toString());
-                int totalPoint_int = Integer.parseInt(maxPoints.getText().toString());
-                //Hand point should not be greater than total points
-                if (handPoint_int > totalPoint_int){
-                    Toast.makeText(choosePlayers.this,R.string.handpointRangeToast, Toast.LENGTH_SHORT).show();
-                }
                 //No empty fields
-                else if (model.isInputEmpty(group))
+                if (model.isInputEmpty(group))
                     Toast.makeText(choosePlayers.this,R.string.emptyTextToast, Toast.LENGTH_SHORT).show();
-                // Next page otherwise
-                else {
-                    //TODO: send points (hand/total) as well
-                    //send Player Names as intent
-                    EditText player1text = (EditText)findViewById(R.id.editText_player1);
-                    EditText player2text = (EditText)findViewById(R.id.editText_player2);
-                    EditText player3text = (EditText)findViewById(R.id.editText_player3);
-                    EditText player4text = (EditText)findViewById(R.id.editText_player4);
-                    String player1String = player1text.getText().toString();
-                    String player2String = player2text.getText().toString();
-                    String player3String = player3text.getText().toString();
-                    String player4String = player4text.getText().toString();
-                    Intent choose_to_main = new Intent(choosePlayers.this, mainPage.class);
-                    choose_to_main.putExtra("Player1", player1String);
-                    choose_to_main.putExtra("Player2", player2String);
-                    choose_to_main.putExtra("Player3", player3String);
-                    choose_to_main.putExtra("Player4", player4String);
+                else{
+                    //Hand point should not be greater than total points
+                    int handPoint_int = Integer.parseInt(handpoint.getText().toString());
+                    int totalPoint_int = Integer.parseInt(maxPoints.getText().toString());
+                    if (handPoint_int > totalPoint_int){
+                        Toast.makeText(choosePlayers.this,R.string.handpointRangeToast, Toast.LENGTH_SHORT).show();
+                    }
+                    else{// Next page otherwise
+                        //TODO: send points (hand/total) as well
+                        //send Player Names as intent
+                        EditText player1text = (EditText)findViewById(R.id.editText_player1);
+                        EditText player2text = (EditText)findViewById(R.id.editText_player2);
+                        EditText player3text = (EditText)findViewById(R.id.editText_player3);
+                        EditText player4text = (EditText)findViewById(R.id.editText_player4);
+                        String player1String = player1text.getText().toString();
+                        String player2String = player2text.getText().toString();
+                        String player3String = player3text.getText().toString();
+                        String player4String = player4text.getText().toString();
 
-                    startActivity(choose_to_main);
+                        Intent choose_to_main = new Intent(choosePlayers.this, mainPage.class);
+                        choose_to_main.putExtra("Player1", player1String);
+                        choose_to_main.putExtra("Player2", player2String);
+                        choose_to_main.putExtra("Player3", player3String);
+                        choose_to_main.putExtra("Player4", player4String);
+                        startActivity(choose_to_main);
+                    }
                 }
+
+
+     //           else {
+
+
+
+      //              Intent choose_to_main = new Intent(choosePlayers.this, mainPage.class);
+
+       //             startActivity(choose_to_main);
+       //         }
 
             }
         });
