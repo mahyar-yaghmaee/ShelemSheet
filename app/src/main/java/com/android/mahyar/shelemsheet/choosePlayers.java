@@ -81,16 +81,6 @@ public class choosePlayers extends ActionBarActivity {
                     }
                 }
 
-
-     //           else {
-
-
-
-      //              Intent choose_to_main = new Intent(choosePlayers.this, mainPage.class);
-
-       //             startActivity(choose_to_main);
-       //         }
-
             }
         });
 

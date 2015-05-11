@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,8 +21,10 @@ public class mainPage extends Activity{
     int colNumber = 0;
     int MAX_ROW_NUM = 30;
 
+    boolean isScoreTime = false;
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_scores);
         //import from other Activity
@@ -43,9 +46,17 @@ public class mainPage extends Activity{
 
 
         mSubmitScoreButton = (Button)findViewById(R.id.submit_scores_button);
+        // call time
+  //      if (!isScoreTime){
+  //          mSubmitScoreButton.setText("Call");
+ //       }
+
+
         mSubmitScoreButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+      //          SeekBar seek = (SeekBar) findViewById(R.id.seekBar);
+     //           seek.setRotation(180);
                 TextView[] leftCol = new TextView[MAX_ROW_NUM];
                 TextView[] rightCol = new TextView[MAX_ROW_NUM];
 
