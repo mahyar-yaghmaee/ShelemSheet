@@ -799,7 +799,8 @@
                 android:layout_centerHorizontal="true"
                 android:max="160"
                 android:progress="70"
-                android:indeterminate="false" />
+                android:indeterminate="false"
+                android:visibility="invisible"/>
 
             <ProgressBar
                 style="?android:attr/progressBarStyleHorizontal"
@@ -810,7 +811,8 @@
                 android:progress="70"
                 android:indeterminate="false"
                 android:layout_alignTop="@+id/textViewL01"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
 
             <ProgressBar
                 style="?android:attr/progressBarStyleHorizontal"
@@ -821,7 +823,8 @@
                 android:progress="70"
                 android:indeterminate="false"
                 android:layout_alignTop="@+id/textViewL02"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
 
             <ProgressBar
                 style="?android:attr/progressBarStyleHorizontal"
@@ -832,7 +835,8 @@
                 android:progress="70"
                 android:indeterminate="false"
                 android:layout_alignTop="@+id/textViewL03"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
 
             <ProgressBar
                 style="?android:attr/progressBarStyleHorizontal"
@@ -843,7 +847,8 @@
                 android:progress="70"
                 android:indeterminate="false"
                 android:layout_alignTop="@+id/textViewL04"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
 
             <ProgressBar
                 style="?android:attr/progressBarStyleHorizontal"
@@ -854,7 +859,8 @@
                 android:progress="70"
                 android:indeterminate="false"
                 android:layout_alignTop="@+id/textViewL05"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
 
             <ProgressBar
                 style="?android:attr/progressBarStyleHorizontal"
@@ -865,7 +871,8 @@
                 android:progress="70"
                 android:indeterminate="false"
                 android:layout_alignTop="@+id/textViewL06"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
 
             <ProgressBar
                 style="?android:attr/progressBarStyleHorizontal"
@@ -876,7 +883,8 @@
                 android:progress="70"
                 android:indeterminate="false"
                 android:layout_alignTop="@+id/textViewL07"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
 
             <ProgressBar
                 style="?android:attr/progressBarStyleHorizontal"
@@ -887,7 +895,8 @@
                 android:progress="70"
                 android:indeterminate="false"
                 android:layout_alignTop="@+id/textViewL08"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
 
             <ProgressBar
                 style="?android:attr/progressBarStyleHorizontal"
@@ -898,7 +907,8 @@
                 android:progress="70"
                 android:indeterminate="false"
                 android:layout_alignTop="@+id/textViewL09"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
 
             <ProgressBar
                 style="?android:attr/progressBarStyleHorizontal"
@@ -909,7 +919,8 @@
                 android:progress="70"
                 android:indeterminate="false"
                 android:layout_alignTop="@+id/textViewL10"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
 
             <ProgressBar
                 style="?android:attr/progressBarStyleHorizontal"
@@ -920,7 +931,8 @@
                 android:progress="70"
                 android:indeterminate="false"
                 android:layout_alignTop="@+id/textViewL11"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
 
             <ProgressBar
                 style="?android:attr/progressBarStyleHorizontal"
@@ -931,7 +943,8 @@
                 android:progress="70"
                 android:indeterminate="false"
                 android:layout_alignTop="@+id/textViewL12"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
 
             <ProgressBar
                 style="?android:attr/progressBarStyleHorizontal"
@@ -942,7 +955,8 @@
                 android:progress="70"
                 android:indeterminate="false"
                 android:layout_alignTop="@+id/textViewL13"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
 
             <ProgressBar
                 style="?android:attr/progressBarStyleHorizontal"
@@ -953,7 +967,8 @@
                 android:progress="70"
                 android:indeterminate="false"
                 android:layout_alignTop="@+id/textViewL14"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
 
             <ProgressBar
                 style="?android:attr/progressBarStyleHorizontal"
@@ -964,7 +979,8 @@
                 android:progress="70"
                 android:indeterminate="false"
                 android:layout_alignTop="@+id/textViewL15"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
 
             <ProgressBar
                 style="?android:attr/progressBarStyleHorizontal"
@@ -975,7 +991,8 @@
                 android:progress="70"
                 android:indeterminate="false"
                 android:layout_alignTop="@+id/textViewL16"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
 
             <ProgressBar
                 style="?android:attr/progressBarStyleHorizontal"
@@ -986,7 +1003,8 @@
                 android:progress="70"
                 android:indeterminate="false"
                 android:layout_alignTop="@+id/textViewL17"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
 
             <ProgressBar
                 style="?android:attr/progressBarStyleHorizontal"
@@ -997,7 +1015,8 @@
                 android:progress="70"
                 android:indeterminate="false"
                 android:layout_alignTop="@+id/textViewL18"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
 
             <ProgressBar
                 style="?android:attr/progressBarStyleHorizontal"
@@ -1008,7 +1027,8 @@
                 android:progress="70"
                 android:indeterminate="false"
                 android:layout_alignTop="@+id/textViewL19"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
 
             <ProgressBar
                 style="?android:attr/progressBarStyleHorizontal"
@@ -1019,7 +1039,8 @@
                 android:progress="70"
                 android:indeterminate="false"
                 android:layout_alignTop="@+id/textViewL20"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
 
             <ProgressBar
                 style="?android:attr/progressBarStyleHorizontal"
@@ -1030,7 +1051,8 @@
                 android:progress="70"
                 android:indeterminate="false"
                 android:layout_alignTop="@+id/textViewL21"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
 
             <ProgressBar
                 style="?android:attr/progressBarStyleHorizontal"
@@ -1041,7 +1063,8 @@
                 android:progress="70"
                 android:indeterminate="false"
                 android:layout_alignTop="@+id/textViewL22"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
 
             <ProgressBar
                 style="?android:attr/progressBarStyleHorizontal"
@@ -1052,7 +1075,8 @@
                 android:progress="70"
                 android:indeterminate="false"
                 android:layout_alignTop="@+id/textViewL23"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
 
             <ProgressBar
                 style="?android:attr/progressBarStyleHorizontal"
@@ -1063,7 +1087,8 @@
                 android:progress="70"
                 android:indeterminate="false"
                 android:layout_alignTop="@+id/textViewL24"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
 
             <ProgressBar
                 style="?android:attr/progressBarStyleHorizontal"
@@ -1074,7 +1099,8 @@
                 android:progress="70"
                 android:indeterminate="false"
                 android:layout_alignTop="@+id/textViewL25"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
 
             <ProgressBar
                 style="?android:attr/progressBarStyleHorizontal"
@@ -1085,7 +1111,8 @@
                 android:progress="70"
                 android:indeterminate="false"
                 android:layout_alignTop="@+id/textViewL26"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
 
             <ProgressBar
                 style="?android:attr/progressBarStyleHorizontal"
@@ -1096,7 +1123,8 @@
                 android:progress="70"
                 android:indeterminate="false"
                 android:layout_alignTop="@+id/textViewL27"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
 
             <ProgressBar
                 style="?android:attr/progressBarStyleHorizontal"
@@ -1107,7 +1135,8 @@
                 android:progress="70"
                 android:indeterminate="false"
                 android:layout_alignTop="@+id/textViewL28"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
 
             <ProgressBar
                 style="?android:attr/progressBarStyleHorizontal"
@@ -1118,7 +1147,8 @@
                 android:progress="70"
                 android:indeterminate="false"
                 android:layout_alignTop="@+id/textViewL29"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
 
             <ProgressBar
                 style="?android:attr/progressBarStyleHorizontal"
@@ -1129,7 +1159,8 @@
                 android:progress="70"
                 android:indeterminate="false"
                 android:layout_alignTop="@+id/textViewL30"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
 
             <TextView
                 android:layout_width="wrap_content"

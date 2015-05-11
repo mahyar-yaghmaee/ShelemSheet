@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -66,11 +67,19 @@ public class mainPage extends Activity{
                     else{
                         int callA_int;
                         int callB_int;
+                        ProgressBar progress_bar = (ProgressBar)findViewById(R.id.progressBar0);
                         // get the integer for non-empty one!
-                        if (!callA.getText().toString().isEmpty())
+                        if (!callA.getText().toString().isEmpty()) {
                             callA_int = Integer.parseInt(callA.getText().toString());
-                        else
+                            updateProgressBar(callA_int);
+                            //progress_bar.setProgress(callA_int);
+                        }
+                        else {
                             callB_int = Integer.parseInt(callB.getText().toString());
+                            //TODO: remove 165 hardcode -> change progress totall from 165 to softcode as well!
+                            updateProgressBar(165-callB_int);
+                            //progress_bar.setProgress(165-callB_int);
+                        }
                         //toggle button and clear text
                         setCalls();
                         isScoreTime = !isScoreTime;
@@ -96,6 +105,16 @@ public class mainPage extends Activity{
         });
 
     }
+
+    //to update progress bar
+    public void updateProgressBar(int value){
+        ProgressBar[] progress_bar = new ProgressBar[MAX_ROW_NUM];
+        progress_bar[colNumber] = getProgressId(colNumber);
+        progress_bar[colNumber].setProgress(value);
+        //Make current progress bar visible
+        progress_bar[colNumber].setVisibility(View.VISIBLE);
+    }
+
 
    //set calls
     public void setCalls(){
@@ -185,7 +204,76 @@ public class mainPage extends Activity{
     }
 
 
+    //probably need to map ids for loop
+    //TODO: remove hardcodig!!
+    public ProgressBar getProgressId(int colNumber) {
 
+        switch (colNumber) {
+            case 0:
+                return (ProgressBar) findViewById(R.id.progressBar0);
+            case 1:
+                return (ProgressBar) findViewById(R.id.progressBar01);
+            case 2:
+                return (ProgressBar) findViewById(R.id.progressBar02);
+            case 3:
+                return (ProgressBar) findViewById(R.id.progressBar03);
+            case 4:
+                return (ProgressBar) findViewById(R.id.progressBar04);
+            case 5:
+                return (ProgressBar) findViewById(R.id.progressBar05);
+            case 6:
+                return (ProgressBar) findViewById(R.id.progressBar06);
+            case 7:
+                return (ProgressBar) findViewById(R.id.progressBar07);
+            case 8:
+                return (ProgressBar) findViewById(R.id.progressBar08);
+            case 9:
+                return (ProgressBar) findViewById(R.id.progressBar09);
+            case 10:
+                return (ProgressBar) findViewById(R.id.progressBar10);
+            case 11:
+                return (ProgressBar) findViewById(R.id.progressBar11);
+            case 12:
+                return (ProgressBar) findViewById(R.id.progressBar12);
+            case 13:
+                return (ProgressBar) findViewById(R.id.progressBar13);
+            case 14:
+                return (ProgressBar) findViewById(R.id.progressBar14);
+            case 15:
+                return (ProgressBar) findViewById(R.id.progressBar15);
+            case 16:
+                return (ProgressBar) findViewById(R.id.progressBar16);
+            case 17:
+                return (ProgressBar) findViewById(R.id.progressBar17);
+            case 18:
+                return (ProgressBar) findViewById(R.id.progressBar18);
+            case 19:
+                return (ProgressBar) findViewById(R.id.progressBar19);
+            case 20:
+                return (ProgressBar) findViewById(R.id.progressBar20);
+            case 21:
+                return (ProgressBar) findViewById(R.id.progressBar21);
+            case 22:
+                return (ProgressBar) findViewById(R.id.progressBar22);
+            case 23:
+                return (ProgressBar) findViewById(R.id.progressBar23);
+            case 24:
+                return (ProgressBar) findViewById(R.id.progressBar24);
+            case 25:
+                return (ProgressBar) findViewById(R.id.progressBar25);
+            case 26:
+                return (ProgressBar) findViewById(R.id.progressBar26);
+            case 27:
+                return (ProgressBar) findViewById(R.id.progressBar27);
+            case 28:
+                return (ProgressBar) findViewById(R.id.progressBar28);
+            case 29:
+                return (ProgressBar) findViewById(R.id.progressBar29);
+            case 30:
+                return (ProgressBar) findViewById(R.id.progressBar30);
+        }
+        return null;
+    }
 
     //probably need to map ids for loop
     //TODO: remove hardcodig!!
