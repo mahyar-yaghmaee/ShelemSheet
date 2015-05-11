@@ -36,8 +36,8 @@ public class mainPage extends Activity{
         TextView TeamBNames = (TextView) findViewById(R.id.teamB_names);
         TeamBNames.setText(player3_name+"/"+player4_name);
         //import points
-        String handPoint = intent.getStringExtra("HandPoint");
-        String totalPoints = intent.getStringExtra("TotalPoints");
+        String handPoint = intent.getStringExtra("handPoint");
+        String maxPoints = intent.getStringExtra("maxPoints");
 
 
 

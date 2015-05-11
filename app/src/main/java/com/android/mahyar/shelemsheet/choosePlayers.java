@@ -75,6 +75,8 @@ public class choosePlayers extends ActionBarActivity {
                         choose_to_main.putExtra("Player2", player2String);
                         choose_to_main.putExtra("Player3", player3String);
                         choose_to_main.putExtra("Player4", player4String);
+                        choose_to_main.putExtra("maxPoints", totalPoint_int);
+                        choose_to_main.putExtra("handPoint", handPoint_int);
                         startActivity(choose_to_main);
                     }
                 }
