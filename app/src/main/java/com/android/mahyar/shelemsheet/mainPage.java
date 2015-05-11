@@ -72,6 +72,7 @@ public class mainPage extends Activity{
                         else
                             callB_int = Integer.parseInt(callB.getText().toString());
                         //toggle button and clear text
+                        setCalls();
                         isScoreTime = !isScoreTime;
                         mSubmitScoreButton.setText("Submit");
                         callA.setText("");
@@ -87,6 +88,8 @@ public class mainPage extends Activity{
                         Toast.makeText(mainPage.this, R.string.emptyTextToast, Toast.LENGTH_SHORT).show();
                     else {
                         setPoints();
+                        isScoreTime = !isScoreTime;
+                        mSubmitScoreButton.setText("Call");
                     }
                 }
             }
@@ -94,6 +97,20 @@ public class mainPage extends Activity{
 
     }
 
+   //set calls
+    public void setCalls(){
+        TextView[] leftCol = new TextView[MAX_ROW_NUM];
+        TextView[] rightCol = new TextView[MAX_ROW_NUM];
+        //read Edit Texts for call
+        EditText pointA = (EditText) findViewById(R.id.editTextTeamA);
+        EditText pointB = (EditText) findViewById(R.id.editTextTeamB);
+        //set results line by line
+        leftCol[colNumber] = getCallIdLeft(colNumber);
+        leftCol[colNumber].setText(pointA.getText());
+        rightCol[colNumber] = getCallIdRight(colNumber);
+        rightCol[colNumber].setText(pointB.getText());
+
+    }
 
     //set (print) points
     public void setPoints(){
