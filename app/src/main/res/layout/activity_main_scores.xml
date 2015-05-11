@@ -1130,6 +1130,811 @@
                 android:indeterminate="false"
                 android:layout_alignTop="@+id/textViewL30"
                 android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallL0"
+                android:layout_alignTop="@+id/progressBar0"
+                android:layout_toLeftOf="@+id/progressBar0"
+                android:layout_toStartOf="@+id/progressBar0"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallL01"
+                android:layout_alignTop="@+id/progressBar01"
+                android:layout_toLeftOf="@+id/progressBar01"
+                android:layout_toStartOf="@+id/progressBar01"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallL02"
+                android:layout_alignTop="@+id/progressBar02"
+                android:layout_toLeftOf="@+id/progressBar02"
+                android:layout_toStartOf="@+id/progressBar02"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallL03"
+                android:layout_alignTop="@+id/progressBar03"
+                android:layout_toLeftOf="@+id/progressBar03"
+                android:layout_toStartOf="@+id/progressBar03"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallL04"
+                android:layout_alignTop="@+id/progressBar04"
+                android:layout_toLeftOf="@+id/progressBar04"
+                android:layout_toStartOf="@+id/progressBar04"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallL05"
+                android:layout_alignTop="@+id/progressBar05"
+                android:layout_toLeftOf="@+id/progressBar05"
+                android:layout_toStartOf="@+id/progressBar05"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallL06"
+                android:layout_alignTop="@+id/progressBar06"
+                android:layout_toLeftOf="@+id/progressBar06"
+                android:layout_toStartOf="@+id/progressBar06"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallL07"
+                android:layout_alignTop="@+id/progressBar07"
+                android:layout_toLeftOf="@+id/progressBar07"
+                android:layout_toStartOf="@+id/progressBar07"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallL08"
+                android:layout_alignTop="@+id/progressBar08"
+                android:layout_toLeftOf="@+id/progressBar08"
+                android:layout_toStartOf="@+id/progressBar08"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallL09"
+                android:layout_alignTop="@+id/progressBar09"
+                android:layout_toLeftOf="@+id/progressBar09"
+                android:layout_toStartOf="@+id/progressBar09"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallL10"
+                android:layout_alignTop="@+id/progressBar10"
+                android:layout_toLeftOf="@+id/progressBar10"
+                android:layout_toStartOf="@+id/progressBar10"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallL11"
+                android:layout_alignTop="@+id/progressBar11"
+                android:layout_toLeftOf="@+id/progressBar11"
+                android:layout_toStartOf="@+id/progressBar11"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallL12"
+                android:layout_alignTop="@+id/progressBar12"
+                android:layout_toLeftOf="@+id/progressBar12"
+                android:layout_toStartOf="@+id/progressBar12"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallL13"
+                android:layout_alignTop="@+id/progressBar13"
+                android:layout_toLeftOf="@+id/progressBar13"
+                android:layout_toStartOf="@+id/progressBar13"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallL14"
+                android:layout_alignTop="@+id/progressBar14"
+                android:layout_toLeftOf="@+id/progressBar14"
+                android:layout_toStartOf="@+id/progressBar14"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallL15"
+                android:layout_alignTop="@+id/progressBar15"
+                android:layout_toLeftOf="@+id/progressBar15"
+                android:layout_toStartOf="@+id/progressBar15"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallL16"
+                android:layout_alignTop="@+id/progressBar16"
+                android:layout_toLeftOf="@+id/progressBar16"
+                android:layout_toStartOf="@+id/progressBar16"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallL17"
+                android:layout_alignTop="@+id/progressBar17"
+                android:layout_toLeftOf="@+id/progressBar17"
+                android:layout_toStartOf="@+id/progressBar17"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallL18"
+                android:layout_alignTop="@+id/progressBar18"
+                android:layout_toLeftOf="@+id/progressBar18"
+                android:layout_toStartOf="@+id/progressBar18"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallL19"
+                android:layout_alignTop="@+id/progressBar19"
+                android:layout_toLeftOf="@+id/progressBar19"
+                android:layout_toStartOf="@+id/progressBar19"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallL20"
+                android:layout_alignTop="@+id/progressBar20"
+                android:layout_toLeftOf="@+id/progressBar20"
+                android:layout_toStartOf="@+id/progressBar20"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallL21"
+                android:layout_alignTop="@+id/progressBar21"
+                android:layout_toLeftOf="@+id/progressBar21"
+                android:layout_toStartOf="@+id/progressBar21"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallL22"
+                android:layout_alignTop="@+id/progressBar22"
+                android:layout_toLeftOf="@+id/progressBar22"
+                android:layout_toStartOf="@+id/progressBar22"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallL23"
+                android:layout_alignTop="@+id/progressBar23"
+                android:layout_toLeftOf="@+id/progressBar23"
+                android:layout_toStartOf="@+id/progressBar23"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallL24"
+                android:layout_alignTop="@+id/progressBar24"
+                android:layout_toLeftOf="@+id/progressBar24"
+                android:layout_toStartOf="@+id/progressBar24"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallL25"
+                android:layout_alignTop="@+id/progressBar25"
+                android:layout_toLeftOf="@+id/progressBar25"
+                android:layout_toStartOf="@+id/progressBar25"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallL26"
+                android:layout_alignTop="@+id/progressBar26"
+                android:layout_toLeftOf="@+id/progressBar26"
+                android:layout_toStartOf="@+id/progressBar26"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallL27"
+                android:layout_alignTop="@+id/progressBar27"
+                android:layout_toLeftOf="@+id/progressBar27"
+                android:layout_toStartOf="@+id/progressBar27"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallL28"
+                android:layout_alignTop="@+id/progressBar28"
+                android:layout_toLeftOf="@+id/progressBar28"
+                android:layout_toStartOf="@+id/progressBar28"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallL29"
+                android:layout_alignTop="@+id/progressBar29"
+                android:layout_toLeftOf="@+id/progressBar29"
+                android:layout_toStartOf="@+id/progressBar29"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallL30"
+                android:layout_alignTop="@+id/progressBar30"
+                android:layout_toLeftOf="@+id/progressBar30"
+                android:layout_toStartOf="@+id/progressBar30"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallR0"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/progressBar0"
+                android:layout_toRightOf="@+id/progressBar0"
+                android:layout_toEndOf="@+id/progressBar0"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallR01"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/progressBar01"
+                android:layout_toRightOf="@+id/progressBar01"
+                android:layout_toEndOf="@+id/progressBar01"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallR02"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/progressBar02"
+                android:layout_toRightOf="@+id/progressBar02"
+                android:layout_toEndOf="@+id/progressBar02"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallR03"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/progressBar03"
+                android:layout_toRightOf="@+id/progressBar03"
+                android:layout_toEndOf="@+id/progressBar03"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallR04"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/progressBar04"
+                android:layout_toRightOf="@+id/progressBar04"
+                android:layout_toEndOf="@+id/progressBar04"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallR05"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/progressBar05"
+                android:layout_toRightOf="@+id/progressBar05"
+                android:layout_toEndOf="@+id/progressBar05"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallR06"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/progressBar06"
+                android:layout_toRightOf="@+id/progressBar06"
+                android:layout_toEndOf="@+id/progressBar06"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallR07"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/progressBar07"
+                android:layout_toRightOf="@+id/progressBar07"
+                android:layout_toEndOf="@+id/progressBar07"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallR08"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/progressBar08"
+                android:layout_toRightOf="@+id/progressBar08"
+                android:layout_toEndOf="@+id/progressBar08"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallR09"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/progressBar09"
+                android:layout_toRightOf="@+id/progressBar09"
+                android:layout_toEndOf="@+id/progressBar09"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallR10"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/progressBar10"
+                android:layout_toRightOf="@+id/progressBar10"
+                android:layout_toEndOf="@+id/progressBar10"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallR11"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/progressBar11"
+                android:layout_toRightOf="@+id/progressBar11"
+                android:layout_toEndOf="@+id/progressBar11"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallR12"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/progressBar12"
+                android:layout_toRightOf="@+id/progressBar12"
+                android:layout_toEndOf="@+id/progressBar12"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallR13"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/progressBar13"
+                android:layout_toRightOf="@+id/progressBar13"
+                android:layout_toEndOf="@+id/progressBar13"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallR14"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/progressBar14"
+                android:layout_toRightOf="@+id/progressBar14"
+                android:layout_toEndOf="@+id/progressBar14"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallR15"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/progressBar15"
+                android:layout_toRightOf="@+id/progressBar15"
+                android:layout_toEndOf="@+id/progressBar15"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallR16"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/progressBar16"
+                android:layout_toRightOf="@+id/progressBar16"
+                android:layout_toEndOf="@+id/progressBar16"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallR17"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/progressBar17"
+                android:layout_toRightOf="@+id/progressBar17"
+                android:layout_toEndOf="@+id/progressBar17"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallR18"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/progressBar18"
+                android:layout_toRightOf="@+id/progressBar18"
+                android:layout_toEndOf="@+id/progressBar18"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallR19"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/progressBar19"
+                android:layout_toRightOf="@+id/progressBar19"
+                android:layout_toEndOf="@+id/progressBar19"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallR20"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/progressBar20"
+                android:layout_toRightOf="@+id/progressBar20"
+                android:layout_toEndOf="@+id/progressBar20"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallR21"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/progressBar21"
+                android:layout_toRightOf="@+id/progressBar21"
+                android:layout_toEndOf="@+id/progressBar21"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallR22"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/progressBar22"
+                android:layout_toRightOf="@+id/progressBar22"
+                android:layout_toEndOf="@+id/progressBar22"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallR23"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/progressBar23"
+                android:layout_toRightOf="@+id/progressBar23"
+                android:layout_toEndOf="@+id/progressBar23"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallR24"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/progressBar24"
+                android:layout_toRightOf="@+id/progressBar24"
+                android:layout_toEndOf="@+id/progressBar24"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallR25"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/progressBar25"
+                android:layout_toRightOf="@+id/progressBar25"
+                android:layout_toEndOf="@+id/progressBar25"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallR26"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/progressBar26"
+                android:layout_toRightOf="@+id/progressBar26"
+                android:layout_toEndOf="@+id/progressBar26"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallR27"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/progressBar27"
+                android:layout_toRightOf="@+id/progressBar27"
+                android:layout_toEndOf="@+id/progressBar27"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallR29"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/progressBar29"
+                android:layout_toRightOf="@+id/progressBar29"
+                android:layout_toEndOf="@+id/progressBar29"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallR30"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/progressBar30"
+                android:layout_toRightOf="@+id/progressBar30"
+                android:layout_toEndOf="@+id/progressBar30"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
         </RelativeLayout>
     </ScrollView>
 
