@@ -316,4 +316,155 @@ public class mainPage extends Activity{
         return null;
     }
 
+
+
+
+
+
+
+    //probably need to map ids for loop
+    //TODO: remove hardcodig!!
+    public TextView getCallIdLeft(int colNumber) {
+
+        switch (colNumber) {
+            case 0:
+                return (TextView) findViewById(R.id.textViewCallL0);
+            case 1:
+                return (TextView) findViewById(R.id.textViewCallL01);
+            case 2:
+                return (TextView) findViewById(R.id.textViewCallL02);
+            case 3:
+                return (TextView) findViewById(R.id.textViewCallL03);
+            case 4:
+                return (TextView) findViewById(R.id.textViewCallL04);
+            case 5:
+                return (TextView) findViewById(R.id.textViewCallL05);
+            case 6:
+                return (TextView) findViewById(R.id.textViewCallL06);
+            case 7:
+                return (TextView) findViewById(R.id.textViewCallL07);
+            case 8:
+                return (TextView) findViewById(R.id.textViewCallL08);
+            case 9:
+                return (TextView) findViewById(R.id.textViewCallL09);
+            case 10:
+                return (TextView) findViewById(R.id.textViewCallL10);
+            case 11:
+                return (TextView) findViewById(R.id.textViewCallL11);
+            case 12:
+                return (TextView) findViewById(R.id.textViewCallL12);
+            case 13:
+                return (TextView) findViewById(R.id.textViewCallL13);
+            case 14:
+                return (TextView) findViewById(R.id.textViewCallL14);
+            case 15:
+                return (TextView) findViewById(R.id.textViewCallL15);
+            case 16:
+                return (TextView) findViewById(R.id.textViewCallL16);
+            case 17:
+                return (TextView) findViewById(R.id.textViewCallL17);
+            case 18:
+                return (TextView) findViewById(R.id.textViewCallL18);
+            case 19:
+                return (TextView) findViewById(R.id.textViewCallL19);
+            case 20:
+                return (TextView) findViewById(R.id.textViewCallL20);
+            case 21:
+                return (TextView) findViewById(R.id.textViewCallL21);
+            case 22:
+                return (TextView) findViewById(R.id.textViewCallL22);
+            case 23:
+                return (TextView) findViewById(R.id.textViewCallL23);
+            case 24:
+                return (TextView) findViewById(R.id.textViewCallL24);
+            case 25:
+                return (TextView) findViewById(R.id.textViewCallL25);
+            case 26:
+                return (TextView) findViewById(R.id.textViewCallL26);
+            case 27:
+                return (TextView) findViewById(R.id.textViewCallL27);
+            case 28:
+                return (TextView) findViewById(R.id.textViewCallL28);
+            case 29:
+                return (TextView) findViewById(R.id.textViewCallL29);
+            case 30:
+                return (TextView) findViewById(R.id.textViewCallL30);
+        }
+        return null;
+    }
+
+    //probably need to map ids for loop
+    //TODO: remove hardcodig!!
+    public TextView getCallIdRight(int colNumber) {
+
+        switch (colNumber) {
+            case 0:
+                return (TextView) findViewById(R.id.textViewCallR0);
+            case 1:
+                return (TextView) findViewById(R.id.textViewCallR01);
+            case 2:
+                return (TextView) findViewById(R.id.textViewCallR02);
+            case 3:
+                return (TextView) findViewById(R.id.textViewCallR03);
+            case 4:
+                return (TextView) findViewById(R.id.textViewCallR04);
+            case 5:
+                return (TextView) findViewById(R.id.textViewCallR05);
+            case 6:
+                return (TextView) findViewById(R.id.textViewCallR06);
+            case 7:
+                return (TextView) findViewById(R.id.textViewCallR07);
+            case 8:
+                return (TextView) findViewById(R.id.textViewCallR08);
+            case 9:
+                return (TextView) findViewById(R.id.textViewCallR09);
+            case 10:
+                return (TextView) findViewById(R.id.textViewCallR10);
+            case 11:
+                return (TextView) findViewById(R.id.textViewCallR11);
+            case 12:
+                return (TextView) findViewById(R.id.textViewCallR12);
+            case 13:
+                return (TextView) findViewById(R.id.textViewCallR13);
+            case 14:
+                return (TextView) findViewById(R.id.textViewCallR14);
+            case 15:
+                return (TextView) findViewById(R.id.textViewCallR15);
+            case 16:
+                return (TextView) findViewById(R.id.textViewCallR16);
+            case 17:
+                return (TextView) findViewById(R.id.textViewCallR17);
+            case 18:
+                return (TextView) findViewById(R.id.textViewCallR18);
+            case 19:
+                return (TextView) findViewById(R.id.textViewCallR19);
+            case 20:
+                return (TextView) findViewById(R.id.textViewCallR20);
+            case 21:
+                return (TextView) findViewById(R.id.textViewCallR21);
+            case 22:
+                return (TextView) findViewById(R.id.textViewCallR22);
+            case 23:
+                return (TextView) findViewById(R.id.textViewCallR23);
+            case 24:
+                return (TextView) findViewById(R.id.textViewCallR24);
+            case 25:
+                return (TextView) findViewById(R.id.textViewCallR25);
+            case 26:
+                return (TextView) findViewById(R.id.textViewCallR26);
+            case 27:
+                return (TextView) findViewById(R.id.textViewCallR27);
+            case 28:
+                return (TextView) findViewById(R.id.textViewCallR28);
+            case 29:
+                return (TextView) findViewById(R.id.textViewCallR29);
+            case 30:
+                return (TextView) findViewById(R.id.textViewCallR30);
+        }
+        return null;
+    }
+
 }
+
+
+

@@ -1908,6 +1908,18 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginStart="10dp" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/printed_call"
+                android:id="@+id/textViewCallR28"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/progressBar28"
+                android:layout_toRightOf="@+id/progressBar28"
+                android:layout_toEndOf="@+id/progressBar28"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
 
             <TextView
                 android:layout_width="wrap_content"

@@ -27,9 +27,9 @@
 
     <string name="points">Points</string>
     <string name="submit_point">Submit</string>
-    <string name="printed_score">360</string>
+    <string name="printed_score"></string>
     <string name="callTextToast">Error: Only one team can call</string>
-    <string name="printed_call">360</string>
+    <string name="printed_call"></string>
 
     <string name="action_settings">Settings</string>
 </resources>
