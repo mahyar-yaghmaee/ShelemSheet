@@ -55,10 +55,7 @@ public class mainPage extends Activity{
         mSubmitScoreButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-      //          SeekBar seek = (SeekBar) findViewById(R.id.seekBar);
-     //           seek.setRotation(180);
-                TextView[] leftCol = new TextView[MAX_ROW_NUM];
-                TextView[] rightCol = new TextView[MAX_ROW_NUM];
+
 
                 mainPageModel model = new mainPageModel();
                 ViewGroup group = (ViewGroup)findViewById(R.id.mainPage);
@@ -66,29 +63,7 @@ public class mainPage extends Activity{
                 if (model.isInputEmpty(group))
                     Toast.makeText(mainPage.this, R.string.emptyTextToast, Toast.LENGTH_SHORT).show();
                 else {
-                    TextView finalA = (TextView) findViewById(R.id.textViewTeamAFinalPoint);
-                    TextView finalB = (TextView) findViewById(R.id.textViewTeamBFinalPoint);
-                    EditText pointA = (EditText) findViewById(R.id.editTextTeamA);
-                    EditText pointB = (EditText) findViewById(R.id.editTextTeamB);
-                    // TODO: this is useful if I want to limit the numbers! (not yet implemented)
-                    int pointA_int = Integer.parseInt(pointA.getText().toString());
-                    int pointB_int = Integer.parseInt(pointB.getText().toString());
-                    leftCol[colNumber] = getIdLeft(colNumber);
-                    rightCol[colNumber] = getIdRight(colNumber);
-                    //set results line by line
-                    leftCol[colNumber] = getIdLeft(colNumber);
-                    leftCol[colNumber].setText(pointA.getText());
-                    rightCol[colNumber] = getIdRight(colNumber);
-                    rightCol[colNumber].setText(pointB.getText());
-                    colNumber = colNumber + 1;
-                    //set final points
-                    //Add 3 spaces after points, because EditText size changes dynamically with points
-                    //TODO: change to fix size
-                    finalA.setText(calcLeftPoints() + "      ");
-                    finalB.setText(calcRightPoints() + "      ");
-                    //clear numbers after submit
-                    pointA.setText("");
-                    pointB.setText("");
+                    setPoints();
                 }
             }
         });
@@ -96,6 +71,36 @@ public class mainPage extends Activity{
     }
 
 
+    //set (print) points
+    public void setPoints(){
+        TextView[] leftCol = new TextView[MAX_ROW_NUM];
+        TextView[] rightCol = new TextView[MAX_ROW_NUM];
+        //setPoints
+        TextView finalA = (TextView) findViewById(R.id.textViewTeamAFinalPoint);
+        TextView finalB = (TextView) findViewById(R.id.textViewTeamBFinalPoint);
+        EditText pointA = (EditText) findViewById(R.id.editTextTeamA);
+        EditText pointB = (EditText) findViewById(R.id.editTextTeamB);
+        // TODO: this is useful if I want to limit the numbers! (not yet implemented)
+        int pointA_int = Integer.parseInt(pointA.getText().toString());
+        int pointB_int = Integer.parseInt(pointB.getText().toString());
+        leftCol[colNumber] = getIdLeft(colNumber);
+        rightCol[colNumber] = getIdRight(colNumber);
+        //set results line by line
+        leftCol[colNumber] = getIdLeft(colNumber);
+        leftCol[colNumber].setText(pointA.getText());
+        rightCol[colNumber] = getIdRight(colNumber);
+        rightCol[colNumber].setText(pointB.getText());
+        colNumber = colNumber + 1;
+        //set final points
+        //Add 3 spaces after points, because EditText size changes dynamically with points
+        //TODO: change to fix size
+        finalA.setText(calcLeftPoints() + "      ");
+        finalB.setText(calcRightPoints() + "      ");
+        //clear numbers after submit
+        pointA.setText("");
+        pointB.setText("");
+
+    }
 
 
 
