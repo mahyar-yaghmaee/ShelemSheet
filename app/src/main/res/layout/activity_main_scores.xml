@@ -2,13 +2,12 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/grey"
+    android:background="@color/light_blue"
     android:id="@+id/mainPage">
 
 
 
     <TextView
-        android:text="MAHYAR/EbraHUM"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
@@ -21,7 +20,6 @@
         android:layout_marginStart="30dp" />
 
     <TextView
-        android:text="MAHYAR/Hassan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
@@ -36,6 +34,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/points"
         android:id="@+id/textViewTeamAFinalPoint"
@@ -46,6 +45,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/points"
         android:id="@+id/textViewTeamBFinalPoint"
