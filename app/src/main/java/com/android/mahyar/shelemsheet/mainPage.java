@@ -47,23 +47,47 @@ public class mainPage extends Activity{
 
         mSubmitScoreButton = (Button)findViewById(R.id.submit_scores_button);
         // call time
-  //      if (!isScoreTime){
-  //          mSubmitScoreButton.setText("Call");
- //       }
+        if (!isScoreTime)
+            mSubmitScoreButton.setText("Call");
+        else
+            mSubmitScoreButton.setText("Submit");
 
 
         mSubmitScoreButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (!isScoreTime){//call time
+                    EditText callA = (EditText) findViewById(R.id.editTextTeamA);
+                    EditText callB = (EditText) findViewById(R.id.editTextTeamB);
+                    //Use XOR, one of tehm shoudl be filled
+                    if (!(callA.getText().toString().isEmpty() ^ callB.getText().toString().isEmpty())){
+                        Toast.makeText(mainPage.this, R.string.callTextToast, Toast.LENGTH_SHORT).show();
+                    }
+                    else{
+                        int callA_int;
+                        int callB_int;
+                        // get the integer for non-empty one!
+                        if (!callA.getText().toString().isEmpty())
+                            callA_int = Integer.parseInt(callA.getText().toString());
+                        else
+                            callB_int = Integer.parseInt(callB.getText().toString());
+                        //toggle button and clear text
+                        isScoreTime = !isScoreTime;
+                        mSubmitScoreButton.setText("Submit");
+                        callA.setText("");
+                        callB.setText("");
+                    }
+                }
+                else {//Go to score submit
 
-
-                mainPageModel model = new mainPageModel();
-                ViewGroup group = (ViewGroup)findViewById(R.id.mainPage);
-                //No empty fields
-                if (model.isInputEmpty(group))
-                    Toast.makeText(mainPage.this, R.string.emptyTextToast, Toast.LENGTH_SHORT).show();
-                else {
-                    setPoints();
+                    mainPageModel model = new mainPageModel();
+                    ViewGroup group = (ViewGroup) findViewById(R.id.mainPage);
+                    //No empty fields
+                    if (model.isInputEmpty(group))
+                        Toast.makeText(mainPage.this, R.string.emptyTextToast, Toast.LENGTH_SHORT).show();
+                    else {
+                        setPoints();
+                    }
                 }
             }
         });

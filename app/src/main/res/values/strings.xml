@@ -28,6 +28,8 @@
     <string name="points">Points</string>
     <string name="submit_point">Submit</string>
     <string name="printed_score"></string>
+    <string name="callTextToast">Error: Only one team can call</string>
+
 
 
 
