@@ -40,8 +40,8 @@ public class mainPage extends Activity{
         TextView TeamBNames = (TextView) findViewById(R.id.teamB_names);
         TeamBNames.setText(player3_name+"/"+player4_name);
         //import points
-        String handPoint = intent.getStringExtra("handPoint");
-        String maxPoints = intent.getStringExtra("maxPoints");
+        int maxPoints = intent.getIntExtra("maxPoints",0);
+        final int handPont = intent.getIntExtra("handPoint",0);
 
 
 
@@ -60,25 +60,21 @@ public class mainPage extends Activity{
                 if (!isScoreTime){//call time
                     EditText callA = (EditText) findViewById(R.id.editTextTeamA);
                     EditText callB = (EditText) findViewById(R.id.editTextTeamB);
-                    //Use XOR, one of tehm shoudl be filled
+                    //Use XOR, one of them should be filled to call
                     if (!(callA.getText().toString().isEmpty() ^ callB.getText().toString().isEmpty())){
                         Toast.makeText(mainPage.this, R.string.callTextToast, Toast.LENGTH_SHORT).show();
                     }
                     else{
                         int callA_int;
                         int callB_int;
-                        ProgressBar progress_bar = (ProgressBar)findViewById(R.id.progressBar0);
                         // get the integer for non-empty one!
                         if (!callA.getText().toString().isEmpty()) {
                             callA_int = Integer.parseInt(callA.getText().toString());
-                            updateProgressBar(callA_int);
-                            //progress_bar.setProgress(callA_int);
+                            updateProgressBar(callA_int, handPont);
                         }
                         else {
                             callB_int = Integer.parseInt(callB.getText().toString());
-                            //TODO: remove 165 hardcode -> change progress totall from 165 to softcode as well!
-                            updateProgressBar(165-callB_int);
-                            //progress_bar.setProgress(165-callB_int);
+                            updateProgressBar(handPont-callB_int, handPont);
                         }
                         //toggle button and clear text
                         setCalls();
@@ -107,9 +103,11 @@ public class mainPage extends Activity{
     }
 
     //to update progress bar
-    public void updateProgressBar(int value){
+    public void updateProgressBar(int value, int handPont){
         ProgressBar[] progress_bar = new ProgressBar[MAX_ROW_NUM];
         progress_bar[colNumber] = getProgressId(colNumber);
+        //set length of bar
+        progress_bar[colNumber].setMax(handPont);
         progress_bar[colNumber].setProgress(value);
         //Make current progress bar visible
         progress_bar[colNumber].setVisibility(View.VISIBLE);
