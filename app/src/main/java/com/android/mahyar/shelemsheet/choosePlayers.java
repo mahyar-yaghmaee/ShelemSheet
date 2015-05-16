@@ -1,6 +1,7 @@
 package com.android.mahyar.shelemsheet;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -8,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.view.ViewGroup;
 
@@ -23,6 +25,7 @@ public class choosePlayers extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_players);
+
 
         mResetButton = (Button)findViewById(R.id.reset_button);
         mResetButton.setOnClickListener(new View.OnClickListener() {
