@@ -2,6 +2,7 @@ package com.android.mahyar.shelemsheet;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,7 +41,7 @@ public class mainPage extends Activity{
         TextView TeamBNames = (TextView) findViewById(R.id.teamB_names);
         TeamBNames.setText(player3_name+"/"+player4_name);
         //import points
-        int maxPoints = intent.getIntExtra("maxPoints",0);
+        final int maxPoints = intent.getIntExtra("maxPoints",0);
         final int handPont = intent.getIntExtra("handPoint",0);
 
 
@@ -85,14 +86,13 @@ public class mainPage extends Activity{
                     }
                 }
                 else {//Go to score submit
-
                     mainPageModel model = new mainPageModel();
                     ViewGroup group = (ViewGroup) findViewById(R.id.mainPage);
                     //No empty fields
                     if (model.isInputEmpty(group))
                         Toast.makeText(mainPage.this, R.string.emptyTextToast, Toast.LENGTH_SHORT).show();
                     else {
-                        setPoints();
+                        setPoints(maxPoints);
                         isScoreTime = !isScoreTime;
                         mSubmitScoreButton.setText("Call");
                     }
@@ -130,7 +130,7 @@ public class mainPage extends Activity{
     }
 
     //set (print) points
-    public void setPoints(){
+    public void setPoints(int maxPoints){
         TextView[] leftCol = new TextView[MAX_ROW_NUM];
         TextView[] rightCol = new TextView[MAX_ROW_NUM];
         //setPoints
@@ -152,19 +152,48 @@ public class mainPage extends Activity{
         //set final points
         //Add 3 spaces after points, because EditText size changes dynamically with points
         //TODO: change to fix size
-        finalA.setText(calcLeftPoints() + "      ");
-        finalB.setText(calcRightPoints() + "      ");
-        //clear numbers after submit
-        pointA.setText("");
-        pointB.setText("");
+        finalA.setText(String.valueOf(calcLeftPoints()) + "      ");
+        finalB.setText(String.valueOf(calcRightPoints()) + "      ");
+        //
+        if (calcLeftPoints() > maxPoints) {
+            //If TeamA reaches maxpint, change colors, disable button and edittext
+            finalA.setTextColor(Color.GREEN);
+            finalB.setTextColor(Color.RED);
+            TextView TeamANames = (TextView) findViewById(R.id.teamA_names);
+            TeamANames.setTextColor(Color.GREEN);
+            TextView TeamBNames = (TextView) findViewById(R.id.teamB_names);
+            TeamBNames.setTextColor(Color.RED);
+            //disable EditTexts
+            pointA.setFocusable(false);
+            pointB.setFocusable(false);
+            mSubmitScoreButton = (Button)findViewById(R.id.submit_scores_button);
+            mSubmitScoreButton.setEnabled(false);
+        }
+        else if (calcRightPoints() > maxPoints){
+            //If TeamB reaches maxpint, change colors, disable button and edittext
+            finalB.setTextColor(Color.GREEN);
+            finalA.setTextColor(Color.RED);
+            TextView TeamBNames = (TextView) findViewById(R.id.teamB_names);
+            TeamBNames.setTextColor(Color.GREEN);
+            TextView TeamANames = (TextView) findViewById(R.id.teamA_names);
+            TeamANames.setTextColor(Color.RED);
+            pointA.setFocusable(false);
+            pointB.setFocusable(false);
+            mSubmitScoreButton = (Button)findViewById(R.id.submit_scores_button);
+            mSubmitScoreButton.setEnabled(false);
+        }
+        else {
+            //clear numbers after submit
+            pointA.setText("");
+            pointB.setText("");
+        }
 
     }
 
 
 
-
     //cal total results for left side
-    public String calcLeftPoints(){
+    public int calcLeftPoints(){
         //TODO: Note this should not be hardcoded!
         int result = 0;
         int[] leftPoints = new int[MAX_ROW_NUM];
@@ -179,11 +208,11 @@ public class mainPage extends Activity{
                 leftPoints[i] = Integer.parseInt(leftCol[i].getText().toString());
             result = result + leftPoints[i];
         }
-        return String.valueOf(result);
+        return result;
     }
 
     //cal total results for right side
-    public String calcRightPoints(){
+    public int calcRightPoints(){
         //TODO: Note this should not be hardcoded!
         int result = 0;
         int[] rightPoints = new int[MAX_ROW_NUM];
@@ -198,7 +227,7 @@ public class mainPage extends Activity{
                 rightPoints[i] = Integer.parseInt(rightCol[i].getText().toString());
             result = result + rightPoints[i];
         }
-        return String.valueOf(result);
+        return result;
     }
 
 
