@@ -26,6 +26,20 @@ public class choosePlayers extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_players);
 
+        //set font
+        Typeface myTypeface = Typeface.createFromAsset(getAssets(), "DroidSerif-Regular.ttf");
+        ViewGroup group = (ViewGroup)findViewById(R.id.scrollable_layout_choose_player);
+        for (int i = 0, count = group.getChildCount(); i < count; ++i) {
+            View view = group.getChildAt(i);
+            if (view instanceof TextView)
+                ((TextView) view).setTypeface(myTypeface);
+        }
+
+
+
+
+      //  TextView mytext = (TextView) findViewById(R.id.textView2);
+      //  mytext.setTypeface(myTypeface);
 
         mResetButton = (Button)findViewById(R.id.reset_button);
         mResetButton.setOnClickListener(new View.OnClickListener() {

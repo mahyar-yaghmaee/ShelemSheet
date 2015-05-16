@@ -65,25 +65,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="numberSigned"
-        android:ems="10"
+        android:ems="3"
         android:id="@+id/editTextTeamA"
-        android:layout_alignBottom="@+id/submit_scores_button"
         android:layout_alignLeft="@+id/textViewTeamAFinalPoint"
         android:layout_alignStart="@+id/textViewTeamAFinalPoint"
-        android:layout_alignRight="@+id/textViewTeamAFinalPoint"
-        android:layout_alignEnd="@+id/textViewTeamAFinalPoint" />
+        android:layout_above="@+id/scroll_view" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="numberSigned"
-        android:ems="10"
+        android:ems="3"
         android:id="@+id/editTextTeamB"
-        android:layout_alignBottom="@+id/submit_scores_button"
         android:layout_alignRight="@+id/textViewTeamBFinalPoint"
         android:layout_alignEnd="@+id/textViewTeamBFinalPoint"
-        android:layout_alignLeft="@+id/textViewTeamBFinalPoint"
-        android:layout_alignStart="@+id/textViewTeamBFinalPoint" />
+        android:layout_above="@+id/scroll_view" />
 
 
     <ScrollView

@@ -3,6 +3,7 @@ package com.android.mahyar.shelemsheet;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,6 +30,14 @@ public class mainPage extends Activity{
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_scores);
+        //set font
+        Typeface myTypeface = Typeface.createFromAsset(getAssets(), "DroidSerif-Regular.ttf");
+        ViewGroup group = (ViewGroup)findViewById(R.id.mainPage);
+        for (int i = 0, count = group.getChildCount(); i < count; ++i) {
+            View view = group.getChildAt(i);
+            if (view instanceof TextView)
+                ((TextView) view).setTypeface(myTypeface);
+        }
         //import from other Activity
         Intent intent = getIntent();
         String player1_name = intent.getStringExtra("Player1");
@@ -150,12 +159,10 @@ public class mainPage extends Activity{
         rightCol[colNumber].setText(pointB.getText());
         colNumber = colNumber + 1;
         //set final points
-        //Add 3 spaces after points, because EditText size changes dynamically with points
-        //TODO: change to fix size
-        finalA.setText(String.valueOf(calcLeftPoints()) + "      ");
-        finalB.setText(String.valueOf(calcRightPoints()) + "      ");
+        finalA.setText(String.valueOf(calcLeftPoints()));
+        finalB.setText(String.valueOf(calcRightPoints()));
         //
-        if (calcLeftPoints() > maxPoints) {
+        if (calcLeftPoints() >= maxPoints) {
             //If TeamA reaches maxpint, change colors, disable button and edittext
             finalA.setTextColor(Color.GREEN);
             finalB.setTextColor(Color.RED);
@@ -169,8 +176,8 @@ public class mainPage extends Activity{
             mSubmitScoreButton = (Button)findViewById(R.id.submit_scores_button);
             mSubmitScoreButton.setEnabled(false);
         }
-        else if (calcRightPoints() > maxPoints){
-            //If TeamB reaches maxpint, change colors, disable button and edittext
+        else if (calcRightPoints() >= maxPoints){
+            //If TeamB reaches maxpoint, change colors, disable button and edittext
             finalB.setTextColor(Color.GREEN);
             finalA.setTextColor(Color.RED);
             TextView TeamBNames = (TextView) findViewById(R.id.teamB_names);
